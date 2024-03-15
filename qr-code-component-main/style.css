@@ -3,35 +3,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+}
+:root {
+    --color01: hsl(228, 45%, 44%);
+    --color02: hsl(0, 0%, 100%);
+    --color03: hsl(212, 45%, 89%);
+    --color04: hsl(220, 15%, 55%);
+    --color05: hsl(218, 44%, 22%);
+    --font01: 'Outfit', sans-serif;
 }
 body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:#D6E1F0;
+    background:var(--color03);
+    font-family: var(--font01);
+    text-align: center;
 }
 .container{
-    width: 340px;
-    height: 500px;
-    background-color: white;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    height: 425px;
+    background-color: var(--color02);
+    max-width: 270px;
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
-.logo img{
-    border-radius: 10px;
+img {
+    padding: 10px;
+    height: 260px;
+    width: 260px;
+    border-radius: 18px;
 }
-.text{
-    text-align: center;
-    margin: 0 24px;
+h2{
+    color: var(--color05);
+    font-size: 20px;
+    padding: 5px 10px;
 }
 p{
-    margin: 5px 10px;
-    padding: 5px 10px;
+    color: var(--color04);
+    font-size: 15px;
+    padding: 15px;
 }
 
